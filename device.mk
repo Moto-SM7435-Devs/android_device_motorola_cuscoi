@@ -30,6 +30,14 @@ TARGET_SCREEN_WIDTH := 1080
 $(foreach f,$(wildcard $(LOCAL_PATH)/rootdir/etc/init/hw/*.rc),\
         $(eval PRODUCT_COPY_FILES += $(f):$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/$(notdir $f)))
 
+# Overlay
+PRODUCT_PACKAGES += \
+    FrameworksResDevice \
+    LineageSystemUIDevice \
+    SettingsResDevice \
+    SystemUIResDevice \
+    WifiResDevice
+
 # Screen
 TARGET_SCREEN_DENSITY := 400
 
