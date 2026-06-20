@@ -36,6 +36,9 @@ PRODUCT_SHIPPING_API_LEVEL := 34
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
 
+# WIFI
+TARGET_WIFI_VARIANTS := adrastea
+
 # Inherit from motorola sm7435-common
 $(call inherit-product, device/motorola/sm7435-common/common.mk)
 
