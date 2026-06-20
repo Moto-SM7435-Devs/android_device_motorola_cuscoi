@@ -16,6 +16,13 @@
 
 DEVICE_PATH := device/motorola/cuscoi
 
+# Bootloader
+TARGET_BOOTLOADER_BOARD_NAME := cuscoi
+
+# Verified Boot
+BOARD_AVB_ROLLBACK_INDEX := 13
+BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX := 13
+
 # Inherit from motorola sm7435-common
 include device/motorola/sm7435-common/BoardConfigCommon.mk
 
